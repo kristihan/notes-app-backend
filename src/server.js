@@ -16,6 +16,8 @@ const init = async () => {
 	server.route(routes);
 
 	await server.start();
+	// eslint-disable-next-line no-undef
+	console.log(`Server berjalan pada ${server.info.uri}`);
 };
 
 init();
